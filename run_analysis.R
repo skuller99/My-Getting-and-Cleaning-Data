@@ -3,14 +3,14 @@
 labels <- read.table("UCI HAR Dataset/activity_labels.txt")
 features <- read.table("UCI HAR Dataset/features.txt")
 
-#training data 
+# Training data part 
 y_train <- read.table("UCI HAR Dataset/train/y_train.txt")
 subject_train <- read.table("UCI HAR Dataset/train/subject_train.txt")
 x_train <- read.table("UCI HAR Dataset/train/X_train.txt")
 names(x_train) <- features$V2  # Step 4 - Appropriately labels the data set with descriptive variable names
 x_train <- cbind(subject = subject_train$V1,activity = y_train$V1,set = "train",x_train) # Binds subject, activity, set, and value data
 
-#test data
+# Test data part
 y_test <- read.table("UCI HAR Dataset/test/y_test.txt")
 subject_test <- read.table("UCI HAR Dataset/test/subject_test.txt")
 x_test <- read.table("UCI HAR Dataset/test/X_test.txt")
