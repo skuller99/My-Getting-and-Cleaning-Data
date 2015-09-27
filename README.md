@@ -1,4 +1,4 @@
-# My-Getting-and-Cleaning-Data
+# Getting and Cleaning Data Course Project
 
 This repo includes:
 * Readme.md file
